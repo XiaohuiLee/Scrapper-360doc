@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+        if (window.location.toString().indexOf("shtml?") > 0) {
+            self.location = window.location.toString().replace(window.location.search.toString(), "");
+        }
+        function doccheckart(json) {
+            if (json[0].result == "1") {
+                self.location = "http://www.360doc.com/noarticle.aspx";
+            }
+        }
+    </script>
+<script src="/js/jquery1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+        if (navigator.userAgent.indexOf("iPhone") > 0 || navigator.userAgent.indexOf("Android") > 0 || navigator.userAgent.indexOf("iPod") > 0) {  //手机端跳转
+            var patt1 = new RegExp("[0-9]*_[0-9]*");
+            var url = patt1.exec(location.href);
+            if (url != "") {
+                self.location = "http://www.360doc.cn/article/" + url + ".html";
+            }
+        }
+        if ( 392130 !=  392130) {
+            $.ajax({
+                url: "http://www.360doc.com/ajax/getuserid.ashx",
+                cache: false,
+                dataType: "json",
+                success: function (result) {
+                    if (17841 != result.userid) { 
+                        self.location = "http://www.360doc.com/content/07/0310/18/17841_392130.shtml";
+                    }
+                }
+            });
+        }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta content="360doc" name="classification" /><link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.360doc.cn/article/17841_392130.html"/><meta content="原版,投资,交易" name=keywords><meta content="八十八部证券投资书籍 - 电子书下载 - 绿色软件 - 绿色下载 - 绿城社区" name=description><meta name="mobile-agent" content="format=html5;url=http://www.360doc.cn/article/17841_392130.html"/><meta content="《证券混沌操作法-低风险获利指南》（原版）《短线交易秘诀》（原版）《期货交易入门》（原版）《战胜华尔街-全美头号职业炒手的股票经》（原版）《期货交易技术分析》（原版）《沃伦巴菲特的投资组合》（原版）《罗杰斯环球投资旅行》（原版）《向格雷厄姆学思考，向巴菲特学投资》（原版）《股票技术分析新思维 来自大师的交易模式》（原版）《华尔街点金人-华尔街精英访谈录》（原版）《期货交易秘诀》（原版）交易冠军（原版）" name=360docabstract><meta content="www.360doc.com" name="author" /><title>
+八十八部证券投资书籍 - 电子书下载 - 绿色软件 - 绿色下载 - 绿城社区
+</title>
+<script src="/js/showarticlefollow20160329.js?t=2017062101" type="text/javascript" charset="utf-8"></script>
+<script src="http://www.360doc.com/js/jQuery.md5.min.js?t=2016041501" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?d86954201130d615136257dde062a503";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<link rel="stylesheet" type="text/css" href="http://css.360doc.com/wzhead-cleaned.css?t=2016011601" /><link rel="stylesheet" type="text/css" href="http://css.360doc.com/newArticle20160509.css?t=2017101701" />
+<script type="text/javascript" language="javascript">
+        window.onerror = ignoreError;
+        function ignoreError() {
+            return true;
+        }
+    </script>
+<link href="http://css.360doc.com/index7/newheader.css?t=2016123003" rel="stylesheet" type="text/css" /></head>
+<body onmouseup="setDragEnd()" onclick="delAllDiv(event)">
+<span id="LayerLogin"></span>
+<div style="position: fixed; width: 100%; z-index: 1000;">
+<div class="header" style="background-color: #ffffff;">
+<div class="header_1">
+<a href="http://www.360doc.com/index.html">
+<img src="http://pubimage.360doc.com/index7/nlogo.jpg" class="f_left" /></a>
+<div class="mylibrary">
+<a id="userInfoUrl" href="http://www.360doc.com/my360doc.aspx" class="a1">
+<div class="h_user">
+<img id="divuserinfonew" src="http://pubimage.360doc.com/index7/dingtu.gif" /><span></span>
+</div>
+我的图书馆
+</a>
+<ul class="hm_list hm_account" style="display: none;">
+<li><a href="http://www.360doc.com/myindex.aspx">首页</a></li>
+<li><a href="http://www.360doc.com/myfiles.aspx?app=1&type=3">馆藏</a></li>
+<li><a href="http://www.360doc.com/myreadroom.aspx">阅览室</a></li>
+<li><a href="http://www.360doc.com/mystudy.aspx">学习圈</a></li>
+<li><a href="http://www.360doc.com/mycontacts.aspx">通讯录</a></li>
+<li><a href="javascript:void(0);" onclick="displaylogin();">退出帐号</a></li>
+</ul>
+</div>
+<div class="headmail f_left" style="display: none;">
+<p class="h_icon1" id="newMsg"></p>
+<span class="h_border"></span>
+<ul class="hm_list" id="msgtips">
+<li id="msgicon"><a href="/mymsg.aspx?app=2">查看信箱</a></li>
+<li id="sysmsgicon"><a href="/mymsg.aspx?app=9">系统消息</a></li>
+<li id="sysicon"><a href="/mymsg.aspx?app=4">官方通知</a></li>
+<li class="hm_color2" style="background-color: #f4f4f4"><a href="/mymsg.aspx?app=6">设置</a></li>
+</ul>
+</div>
+<div class="headtalker f_left" style="display: none;">
+<p class="h_icon1" id="newDialog"></p>
+<span class="h_border"></span>
+<ul class="hm_list">
+<li id="li1chat"><a href="javascript:void(0)" onclick="initchatnew()">开始对话</a></li>
+<li id="li2chat" style="display: none;"><a href="javascript:void(0)" style="color: #141414;">有<span>11</span>人和你对话，<span onclick="initchatnew()" style="color: #4578b4">查看</span>&nbsp;<span onclick="clearinfochat()" style="color: #4578b4">忽略</span></a></li>
+<li><a href="http://www.360doc.com/mycontacts.aspx?app=8">历史对话记录</a></li>
+<li class="hm_color2" style="background-color: #f4f4f4"><a href="http://www.360doc.com/mycontacts.aspx?app=7">通知设置</a></li>
+</ul>
+</div>
+<a href="http://www.360doc.com/advice.html" target="_blank" class="head_talk f_right">留言交流</a>
+<div class="headsearch f_right">
+<div class="zcomdiv">
+<input type="text" class="headsearch_inp f_left" value="搜文章 找馆友" />
+<span class="headsearch_btn f_right" id="searchlinkid"></span>
+</div>
+<div class="headsearch_select">
+<p class="hs_title">请选择搜索范围</p>
+<a href="javascript:goSearch();" class="cur">含&nbsp;<span></span>&nbsp;的文章</a>
+<a href="javascript:goSearch();">昵称为&nbsp;<span></span>&nbsp;的馆友</a>
+<a href="javascript:goSearch();">兴趣为&nbsp;<span></span>&nbsp;的馆友</a>
+</div>
+</div>
+</div>
+</div>
+<div class="arti_type_shadow"></div>
+</div>
+<div style="height: 68px; _height: 0px; width: 100%;"></div>
+<div class="clear360doc"></div>
+<div class="doc360article_content">
+<div style="height: 90px; padding-top: 13px;">
+<script async src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script><ins class='adsbygoogle' style='display: inline-block; width: 970px; height: 90px' data-ad-client='ca-pub-6625678643128649' data-ad-slot='2709112222'></ins><script> (adsbygoogle = window.adsbygoogle || []).push({ }); </script>
+</div>
+<p class="clearboth"></p>
+<div class="a_left">
+<div id="bgchange">
+<div class="fontsize_bgcolor_controler">
+<div class="a_bgcolor">
+<img src="http://pubimage.360doc.com/NewArticle/bgcolor.jpg" />
+<div class="a_colorlist">
+<span class="a_color1" onclick="artStatistics('20-11-1');">
+<img src="http://pubimage.360doc.com/NewArticle/yes.gif" /></span>
+<span class="a_color2" onclick="artStatistics('20-11-2');">
+<img src="http://pubimage.360doc.com/NewArticle/yes.gif" /></span>
+<span class="a_color3" onclick="artStatistics('20-11-3');">
+<img src="http://pubimage.360doc.com/NewArticle/yes.gif" /></span>
+<span class="a_color4" onclick="artStatistics('20-11-4');">
+<img src="http://pubimage.360doc.com/NewArticle/yes.gif" /></span>
+<span class="a_color5" onclick="artStatistics('20-11-5');">
+<img src="http://pubimage.360doc.com/NewArticle/yes.gif" /></span>
+<span class="a_color6 cur" onclick="artStatistics('20-11-6');">
+<img src="http://pubimage.360doc.com/NewArticle/yes.gif" /></span>
+</div>
+</div>
+<div class="a_fontsize">
+<img src="http://pubimage.360doc.com/NewArticle/fontSize.jpg" />
+<div class="fschange">
+<label>
+<input type="radio" name="font_Size" id="" value="18" onclick="artStatistics('20-10-1');" />大
+</label>
+&nbsp;
+<label>
+<input type="radio" name="font_Size" id="" value="16" onclick="artStatistics('20-10-2');" />中
+</label>
+&nbsp;
+<label>
+<input type="radio" name="font_Size" id="" value="14" onclick="artStatistics('20-10-3');" />小
+</label>
+</div>
+</div>
+</div>
+<h2 id="titiletext">八十八部证券投资书籍 - 电子书下载 - 绿色软件 - 绿色下载 - 绿城社区</h2>
+<div class="article_data">
+<div class="article_data_left">
+2007-03-10
+<span class="a_username">&nbsp;<a href="http://www.360doc.com/userhome/17841" id="savernickname" target="_blank" onclick="artStatistics(&#39;20-7-1&#39;);">chshzheng</a>
+</span>
+<span id="articleinfo">
+<span id="docsource" class="a_from"></span><span id="360doc_Readnum"></span><span id="360docResaveCount"><span onclick="ShowSaverUser();artStatistics('20-13');" id="360doc_saverNum" style="cursor: pointer;"></span>
+<span id="360doc_saverUser">
+<div style="position: absolute; height: 305px; width: 144px; left: 0px; z-index: 2;" id="sameArtOuter">
+<div onclick="event.cancelBubble=true;" style="overflow-y: auto; height: 300px; overflow-x: hidden; z-index: 100; right: 0px; margin-top: -10px;" id="sameArt">
+</div>
+</div>
+</span>
+</span>
+</span>
+</div>
+<div id="resavelayer1" class="bdsharebuttonbox article_data_right">
+</div>
+</div>
+<div id="articlecontent" class="article_container" onmousedown="newhighlight = true;" onmouseup="NewHighlight(event);">
+<table>
+<tbody>
+<tr>
+<td id="artContent" width="656">
+<div style="width: 656px; margin: 0; padding: 0; height: 0;"></div>
+<span class=bold>八十八部证券投资书籍</span><br><br><font style="FONT-SIZE: 0px; COLOR: #dceced">转载请注明出自绿城52nv.com,本贴地址:</font><a href="http://www.52nv.com/viewthread.php?tid=171623"><font style="FONT-SIZE: 0px; COLOR: #dceced">http://www.52nv.com/viewthread.php?tid=171623</font></a><br>
+<div class=viewthreadtxt><font size=3>本页书籍百分之九十为国外著作。个别书籍需要AcroReader阅读器（用于PDF文件）或超星阅读器（用于PDG文件）。<br><br><br><br></font>《股市趋势技术分析》（原版）<br><br><a href="http://www.swdyj.com/sj/GSQSJS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GSQSJS.rar</font></a><br><br>《日本蜡烛图技术》（原版）<br><br><a href="http://www.swdyj.com/sj/LZT.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/LZT.rar</font></a><br><br>《股票K线战法》（原版）<br><br><a href="http://www.swdyj.com/sj/KXZF.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/KXZF.rar</font></a><br><br>《证券混沌操作法-低风险获利指南》（原版）<br><br><a href="http://www.swdyj.com/sj/HDCZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/HDCZ.rar</font></a><br><br>《证券交易新空间》（原版）<br><br><a href="http://www.swdyj.com/sj/ZQJYX.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZQJYX.rar</font></a><br><br>《亚当理论》（原版）<br><br><a href="http://www.swdyj.com/SJ/YDLL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/SJ/YDLL.rar</font></a><br><br>《股市晴雨表》（原版）<br><br><a href="http://www.swdyj.com/sj/QYB.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QYB.chm</font></a><br><br>《专业投机原理》（原版）<br><br><a href="http://www.swdyj.com/sj/ZYTJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZYTJ.rar</font></a><br><br>《短线交易秘诀》（原版）<br><br><a href="http://www.swdyj.com/sj/DXJY.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DXJY.rar</font></a><br><br>《原版海龟交易法则》（中文版）<br><br><a href="http://www.swdyj.com/sj/YBHG.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/YBHG.rar</font></a><br><br>《江恩论述六边形的手稿》(中英对照)<br><br><a href="http://www.swdyj.com/sj/JELX.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JELX.rar</font></a><br><br>《股市博弈》<br><br><a href="http://www.swdyj.com/sj/GSBY.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GSBY.rar</font></a><br><br>《实战短线》<br><br><a href="http://www.swdyj.com/sj/DXSZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DXSZ.rar</font></a><br><br>《波浪理论基础》<br><br><a href="http://www.swdyj.com/SJ/BLJC.exe" target=_blank><font color=#0000ff>http://www.swdyj.com/SJ/BLJC.exe</font></a> <br><br>《期货交易入门》（原版）<br><br><a href="http://www.swdyj.com/SJ/qhjyrm.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/SJ/qhjyrm.chm</font></a> <br><br>《股票作手回忆录》<br><br><a href="http://www.swdyj.com/SJ/zu55188ou.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/SJ/zu55188ou.chm</font></a><br><br>《期货市场技术分析》（原版）<br><br><a href="http://www.swdyj.com/sj/jsfx.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/jsfx.rar</font></a> <br><br>《艾略特波浪理论-市场行为的关键》（原版） <br><br><a href="http://www.swdyj.com/sj/scxw.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/scxw.rar</font></a><br><br>《投机智慧》（原版）<br><br><a href="http://www.swdyj.com/sj/tjzh.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/tjzh.chm</font></a><br><br>《通向金融王国的自由之路》（原版）<br><br><a href="http://www.swdyj.com/sj/jrwg.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/jrwg.rar</font></a><br><br>《系统交易方法》（原版）<br><br><a href="http://www.swdyj.com/sj/xtjy.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/xtjy.rar</font></a><br><br>《计算机化证券期货投资交易》：<br><br><a href="http://www.swdyj.com/sj/JSJFX.zip" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JSJFX.zip</font></a><br><br>《索罗斯传记》<br><br><a href="http://www.swdyj.com/sj/SLS.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/SLS.chm</font></a><br><br>《金融炼金术》（原版）<br><br><a href="http://www.swdyj.com/sj/LJS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/LJS.rar</font></a><br><br>《股票大作手操盘术》<br><br><a href="http://www.swdyj.com/sj/GPDZS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GPDZS.rar</font></a><br><br>《欧奈尔：证券投资二十四堂课》（原版）<br><br><a href="http://www.swdyj.com/sj/ZQTZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZQTZ.rar</font></a><br><br>《大众心理与走势预测》（原版）<br><br><a href="http://www.swdyj.com/sj/DZXL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DZXL.rar</font></a><br><br>《股市无敌》（原版）<br><br><a href="http://www.swdyj.com/sj/GSWD.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GSWD.rar</font></a><br><br>《期货市场获利实用技法》<br><br><a href="http://www.swdyj.com/sj/QHHL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QHHL.rar</font></a><br><br>《投资理财》（原版）<br><br><a href="http://www.swdyj.com/sj/TZLC.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/TZLC.rar</font></a><br><br>《战胜华尔街-全美头号职业炒手的股票经》（原版）<br><br><a href="http://www.swdyj.com/sj/ZSHEJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZSHEJ.rar</font></a><br><br>《战胜华尔街-审慎投资者指南》（原版）<br><br><a href="http://www.swdyj.com/sj/ZSHEJ2.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZSHEJ2.rar</font></a><br><br>《期货交易成功之道》（原版）<br><br><a href="http://www.swdyj.com/sj/QHJY.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QHJY.rar</font></a><br><br>《期货交易技术分析》（原版）<br><br><a href="http://www.swdyj.com/sj/QHJS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QHJS.rar</font></a><br><br>《在华尔街崛起》（原版）<br><br><a href="http://www.swdyj.com/sj/ZHEJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZHEJ.rar</font></a><br><br>《索罗斯-走在市场曲线前面的人》（原版）<br><br><a href="http://www.swdyj.com/sj/ZZGS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZZGS.rar</font></a><br><br>《沃伦巴菲特之路》（原版）<br><br><a href="http://www.swdyj.com/sj/BFTZL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/BFTZL.rar</font></a><br><br>《沃伦巴菲特的投资组合》（原版）<br><br><a href="http://www.swdyj.com/sj/TZZH.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/TZZH.rar</font></a><br><br>《巴菲特怎样选择成长股》（原版）<br><br><a href="http://www.swdyj.com/sj/BFTXZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/BFTXZ.rar</font></a><br><br>《价值再发现》（原版）<br><br><a href="http://www.swdyj.com/sj/JZFZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JZFZ.rar</font></a><br><br>《江恩理论》<br><br><a href="http://www.swdyj.com/sj/JELL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JELL.rar</font></a><br><br>《格雷厄姆论价值投资》（原版）<br><br><a href="http://www.swdyj.com/sj/GLEM.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GLEM.rar</font></a><br><br>《玩转地球》（原版）<br><br><a href="http://www.swdyj.com/sj/WZDQ.RAR" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/WZDQ.RAR</font></a><br><br>《罗杰斯环球投资旅行》（原版）<br><br><a href="http://www.swdyj.com/sj/HQLX.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/HQLX.rar</font></a><br><br>《炒股的智慧》<br><br><a href="http://www.swdyj.com/sj/CGZH.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/CGZH.rar</font></a><br><br>《金融怪杰》<br><br><a href="http://www.swdyj.com/sj/JRGJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JRGJ.rar</font></a><br><br>《技术分析精解》（原版）<br><br><a href="http://www.swdyj.com/sj/JSJJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JSJJ.rar</font></a><br><br>《直觉交易商》（原版）<br><br><a href="http://www.swdyj.com/sj/ZJJY.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZJJY.rar</font></a><br><br>《投资错觉》（原版）<br><br><a href="http://www.swdyj.com/sj/TZCJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/TZCJ.rar</font></a><br><br>《动能指标》（原版）<br><br><a href="http://www.swdyj.com/sj/DNZB.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DNZB.rar</font></a><br><br>《克罗谈投资策略》（原版）<br><br><a href="http://www.swdyj.com/sj/KLCL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/KLCL.rar</font></a><br><br>《向格雷厄姆学思考，向巴菲特学投资》（原版）<br><br><a href="http://www.swdyj.com/sj/XGXB.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/XGXB.rar</font></a><br><br>《一个投机者的告白》（原版）<br><br><a href="http://www.swdyj.com/sj/YGTJZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/YGTJZ.rar</font></a><br><br>《一次读完25本投资经典》（原版）<br><br><a href="http://www.swdyj.com/sj/YC25.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/YC25.rar</font></a><br><br>《酒田战法》<br><br><a href="http://www.swdyj.com/sj/JTZF.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JTZF.rar</font></a><br><br>《股票经典分析》<br><br><a href="http://www.swdyj.com/sj/GPJD.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GPJD.rar</font></a><br><br>《交易为王》（原版）<br><br><a href="http://www.swdyj.com/sj/JJWW.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JJWW.rar</font></a><br><br>《投资学》（原版）<br><br><a href="http://www.swdyj.com/sj/TZX.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/TZX.rar</font></a><br><br>《投资艺术》（原版）<br><br><a href="http://www.swdyj.com/sj/TZYS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/TZYS.rar</font></a><br><br>《var：风险价值—金融风险管理新标准》（原版）<br><br><a href="http://www.swdyj.com/sj/varFXJZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/varFXJZ.rar</font></a><br><br>《交易规则2》（原版）<br><br><a href="http://www.swdyj.com/sj/JYGZ2.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JYGZ2.rar</font></a><br><br>《期货期权入门》（原版）<br><br><a href="http://www.swdyj.com/sj/QHQQ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QHQQ.rar</font></a><br><br>《资本市场的混沌与秩序》（原版）<br><br><a href="http://www.swdyj.com/sj/ZBSC.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ZBSC.rar</font></a><br><br>《股票技术分析新思维 来自大师的交易模式》（原版）<br><br><a href="http://www.swdyj.com/sj/HSXSW.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/HSXSW.rar</font></a><br><br>《股票市场与概率》（原版）<br><br><a href="http://www.swdyj.com/sj/GPYGL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GPYGL.rar</font></a><br><br>《华尔街点金人-华尔街精英访谈录》（原版）<br><br><a href="http://www.swdyj.com/sj/HEJDJR.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/HEJDJR.rar</font></a><br><br>《道氏理论》<br><br><a href="http://www.swdyj.com/sj/DSLL.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DSLL.rar</font></a><br><br>《确定性的终结-时间、混沌与新自然法则》<br><br><a href="http://www.swdyj.com/sj/QDXZJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QDXZJ.rar</font></a><br><br>《新版混沌操作法》<br><br><a href="http://www.swdyj.com/sj/XBHD.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/XBHD.rar</font></a><br><br>《88种股市陷阱》（原版）<br><br><a href="http://www.swdyj.com/sj/88GSXJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/88GSXJ.rar</font></a><br><br>《聪明的投资人》（原版）<br><br><a href="http://www.swdyj.com/sj/CMTZR.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/CMTZR.rar</font></a><br><br>《华尔街神童》（原版）<br><br><a href="http://www.swdyj.com/sj/HEJST.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/HEJST.rar</font></a><br><br>《巴菲特年度报告(1977—2003)》（原版）<br><br><a href="http://www.swdyj.com/sj/BFTNDBG.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/BFTNDBG.rar</font></a><br><br>《操盘建议-全球顶尖交易员的成功实践和心路历程》（原版）<br><br><a href="http://www.swdyj.com/sj/CPJY.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/CPJY.rar</font></a><br><br>《我如何弄垮巴林银行的》<br><br><a href="http://www.swdyj.com/sj/WSRH.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/WSRH.chm</font></a><br><br>《巴菲特致股东的信：股份公司教程》（原版）<br><br><a href="http://www.swdyj.com/sj/BFTZGD.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/BFTZGD.rar</font></a><br><br>《分析实战技法》<br><br><a href="http://www.swdyj.com/sj/FXSZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/FXSZ.rar</font></a><br><br><br>《布林线》（原版） <br><br><a href="http://www.swdyj.com/sj/BLX.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/BLX.rar</font></a><br><br><br>《对冲基金手册》（原版） <br><br><a href="http://www.swdyj.com/sj/DCSC.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DCSC.rar</font></a><br><br>《期货交易秘诀》（原版） <br><br><a href="http://www.swdyj.com/sj/QHMJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QHMJ.rar</font></a> <br><br>《穷爸爸富爸爸》 <br><br><a href="http://www.swdyj.com/sj/QBFB.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/QBFB.rar</font></a> <br><br>《长线短炒》（原版） <br><br><a href="http://www.swdyj.com/sj/CXDC.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/CXDC.rar</font></a>&nbsp; &nbsp;<br><br><br>《股票作手回忆录（原版）》<br><br><br><a href="http://www.swdyj.com/sj/GPZS.RAR" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/GPZS.RAR</font></a><br><br>&nbsp; &nbsp;《股票大作手操盘术》 <br><br><a href="http://www.swdyj.com/sj/DZSCP.chm" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DZSCP.chm</font></a><br><br>《艾略特名著集（原版）》<br><br><a href="http://www.swdyj.com/sj/ALTMZ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/ALTMZ.rar</font></a><br><br>&nbsp; &nbsp;《交易冠军（原版）》<br><br><a href="http://www.swdyj.com/sj/JYGJ.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/JYGJ.rar</font></a><br><br>&nbsp; &nbsp;《短线交易大师——工具与策略》<br><br><a href="http://www.swdyj.com/sj/DXJYDS.rar" target=_blank><font color=#0000ff>http://www.swdyj.com/sj/DXJYDS.rar</font></a></div>
+<div></div>
+</td>
+<script>
+                                    var html = document.getElementById("artContent").innerHTML;
+                                    document.getElementById("artContent").innerHTML = html;
+
+                                </script>
+</tr>
+</tbody>
+</table>
+<div id="viewerPlaceHolder" style="width: 717px; height: 700px; display: none; margin: 0 auto;">
+</div>
+</div>
+<table>
+<tbody>
+<tr>
+<td>
+<ul></ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div></div>
+<span></span>
+<a></a>
+<p style="margin: 0; padding: 0;"></p>
+<p class="clearboth"></p>
+<div id="divreward" style="display: none;"></div>
+<div class="bdsharebuttonbox bottombtn" style="margin-top: 33px;">
+<div class="zcommond" style="overflow: visible;">
+<a href="javascript:void(0);" class="btn_collect" onclick="SaveArt();artStatistics('20-3-2');">转藏到我的图书馆</a>
+<a id="flowimg3" href="javascript:void(0);" class="btn_good" onclick="Showflowerlayer('sendedLayer1');">献花（<span id="articleflowernum">0</span>）
+<span id="flowernumadd" style="display: none;">+1</span>
+</a>
+<span class="span1 f_left" onclick="setTimeout(function(){$('.bottombtn .sharelist_new').slideToggle(0);},10);artStatistics('20-8-3');" onmouseover="this.style.color='#0f659c'" onmouseout="this.style.color=''">分享：</span>
+<a class="sharewx f_left" href="javascript:void(0);" onclick="shareWeixin();artStatistics('20-8-6');">微信</a>
+<div class="s2 f_left" onclick="setTimeout(function(){$('.bottombtn .sharelist_new').slideToggle(0);},10);artStatistics('20-8-4');"><span></span></div>
+</div>
+<div class="sharelist_new" id="fenxiangLayer2">
+<a class="slbg1" href="javascript:void(0);" data-cmd="qzone" onclick="artStatistics('20-8-8');">QQ空间</a>
+<a class="slbg2" href="javascript:void(0);" data-cmd="sqq" onclick="artStatistics('20-8-10');">QQ好友</a>
+<a class="slbg3" href="javascript:void(0);" data-cmd="tsina" onclick="artStatistics('20-8-12');">新浪微博</a>
+<a class="slbg5" href="javascript:void(0);" onclick="showdivemail1();artStatistics('20-8-16');">推荐给朋友</a>
+</div>
+</div>
+<div class="bottom_controler">
+<p class="bottom_cleft">
+来自：
+<span class="a_username" style="width: auto;">
+<a href="http://www.360doc.com/userhome/17841" id="savernickname2" target="_blank" onclick="artStatistics(&#39;20-7-2&#39;);">chshzheng</a>
+</span>
+&gt;
+<span id="cname" class="a_from"><a href='http://www.360doc.com/userhome.aspx?userid=17841&cid=30' target='_blank' onclick='artStatistics("20-6");'>《网站》</a></span>
+</p>
+<div class="bottom_cright">
+<a href=" https://www.baidu.com/s?wd=%e5%8e%9f%e7%89%88+%e6%8a%95%e8%b5%84+%e4%ba%a4%e6%98%93&tn=SE_hldp01010_6r0gix1f" target="_blank" class="a1" onclick="artStatistics('20-19');">以文找文</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="javascript:void(0);" class="a2" onclick="showAlertLayer1();artStatistics('20-18');">举报</a>
+</div>
+</div>
+<div class="prev_next">
+<p id="lastart" class="p1">
+</p>
+<p id="nextart" class="p2">
+</p>
+</div>
+</div>
+<p class="clearboth"></p>
+<div style="width: 676px; float: left;">
+<div class="str_border" style="border: none; position: relative; z-index: 2;">
+<strong>猜你喜欢</strong>
+</div>
+<ul class="youlike" style="margin-top: -18px; position: relative; z-index: 1;">
+<div style="width: 676px; height: 280px; border: 0;" id="divyoulikead">
+</div>
+</ul>
+<div class="zcommond" style="padding: 10px 0 5px;">
+<div class="bottom_article f_left">
+<div class="str_border">
+<strong>类似文章</strong>
+<a href=http://www.360doc.com/relevant/392130_more.shtml target='_blank' class='a_more f_right' onclick='artStatistics("20-9-8");'>更多</a>
+</div>
+<ul class="barticle_list">
+<li><span><a href=http://www.360doc.com/content/12/0809/17/1245783_229259837.shtml target=_blank onclick='artStatistics("20-9-7");'>金融投资书籍分类梳理</a></span></li>
+<li><span><a href=http://www.360doc.com/content/07/0118/01/17189_335236.shtml target=_blank onclick='artStatistics("20-9-7");'>200多部股票证券书籍，新增网盘下载，想...</a></span></li>
+<li><span><a href=http://www.360doc.com/content/07/0506/11/20425_484823.shtml target=_blank onclick='artStatistics("20-9-7");'>★ 证券从业人员必读书籍</a></span></li>
+<li><span><a href=http://www.360doc.com/content/10/0727/22/2381866_41902839.shtml target=_blank onclick='artStatistics("20-9-7");'>彼得林奇写的三本书都不错</a></span></li>
+<li><span><a href=http://www.360doc.com/content/14/0429/09/1977751_373113404.shtml target=_blank onclick='artStatistics("20-9-7");'>十本你必须读的投资类书籍</a></span></li>
+<li><span><a href=http://www.360doc.com/content/09/0413/22/63750_3122917.shtml target=_blank onclick='artStatistics("20-9-7");'>跟随彼得.林奇学投资 </a></span></li>
+<li><span><a href=http://www.360doc.com/content/09/0517/23/150271_3544902.shtml target=_blank onclick='artStatistics("20-9-7");'>30部必读的投资学经典</a></span></li>
+<li><span><a href=http://www.360doc.com/content/08/0315/11/32668_1119436.shtml target=_blank onclick='artStatistics("20-9-7");'>成功的投资从大量的阅读开始</a></span></li>
+</ul>
+</div>
+<div class="bottom_article f_right">
+<div class="str_border">
+<strong>精选文章</strong>
+</div>
+<ul class="barticle_list">
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/0512/22/4564993_284806281.shtml target="_blank">有趣的男人和女人的50条定律</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/0922/18/6085160_316167781.shtml target="_blank">祖传秘方：乙肝验方秘传大公开</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/0424/02/1581441_280413847.shtml target="_blank">842所大学总排行榜（2013-2014年）</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/0205/21/4185775_264352533.shtml target="_blank">老司机总结的史上最详细最全高速行车秘籍(组图)</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/1204/05/10252834_334247757.shtml target="_blank">中华奇书：韬晦术</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/1216/15/508321_337497186.shtml target="_blank">家传秘笈炒藕丝</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/13/1216/22/1689336_337592397.shtml target="_blank">情景交融,明丽自然:看婉约词宗——李清照的诗词全集</a></span></li>
+<li><span><a onclick="artStatistics('20-9-9');" href=http://www.360doc.com/content/14/0705/00/176097_391987257.shtml target="_blank">生活中最实用的止痛妙招</a></span></li>
+</ul>
+</div>
+</div>
+<div id="divunderad">
+</div>
+<div id="ReflectionPart">
+<div style="height: 156px; margin: 0px 0px;">
+<div class="plbox">
+<div style="padding-left: 6px;">
+<div class="titwx" style="height: 23px; font-size: 16px; font-weight: bold; margin-top: 10px;">
+发表评论<a target="_blank" href="http://www.360doc.com/agreement.html" style="float: right; font-size: 12px; color: #666; font-weight: normal; line-height: 20px; padding-right: 4px;">评论公约</a>
+</div>
+<textarea name="SendRefTB" id="SendRefTB" style="width: 100%; margin-top: 6px; height: 75px; border: 1px solid #e7e7e7; background-color: #fff; overflow: auto; font-size: 12px;" onfocus="testContent(1);" onblur="testContent(2)"></textarea>
+<div style="text-align: right; padding-right: 3px; padding-top: 6px;">
+<div class="huifubt">
+<a id="ImgSendPL" href="javascript:void(0);" onclick="SubmitReflection();"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="padding-top: 15px; padding-left: 15px;" id="Reflction">
+</div>
+</div>
+</div>
+<div class="a_right">
+<div class="user_info">
+<div class="user_photo f_left">
+<p class="user_photopic">
+<a href="http://www.360doc.com/userhome/17841" id="userphotourl" target="_blank" onclick="artStatistics(&#39;20-7-4&#39;);">
+<img src="http://pubimage.360doc.com/head/009.gif" id="userphoto" width="58" height="58" />
+</a>
+</p>
+<a href="javascript:void(0);" onclick="docTalk();artStatistics('20-15');" class="user_talk" title="与TA对话"></a>
+</div>
+<div class="user_data f_right">
+<div class="user_data_name">
+<a href="http://www.360doc.com/userhome/17841" id="nickname" target="_blank" onclick="artStatistics(&#39;20-7-3&#39;);">chshzheng</a>
+<img src="http://pubimage.360doc.com/NewArticle/user_name_tag.gif" alt="图书馆" />
+</div>
+<p id="userdegree"><img src='http://pubimage.360doc.com/NewArticle/userstar1.gif' /><img src='http://pubimage.360doc.com/NewArticle/userstar1.gif' /><img src='http://pubimage.360doc.com/NewArticle/userstar1.gif' /><img src='http://pubimage.360doc.com/NewArticle/userstar1.gif' /><img src='http://pubimage.360doc.com/NewArticle/userstar2.gif' /></p>
+<div class="user_data_num">
+<a id="spanfollowstatus" class="gz_no"></a>
+<script type="text/javascript">isfollow(17841);</script>
+<span id="follownum">150</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span>馆藏</span>&nbsp;<span id="artnum">1287</span>
+</div>
+</div>
+</div>
+<div class="his_her"><ul class='his_her_type'><li class='f_left curone'>TA的最新馆藏</li></ul><div class='his_her_div' style="height:190px;"><ul class='his_her_list'><li><div><span style="color:#b0b0b0;">[转]&nbsp;</span><a href=http://www.360doc.com/content/12/0318/16/765107_195399047.shtml target=_blank onclick="artStatistics('20-9-3');">美女大集合</a></div><div><span style="color:#b0b0b0;">[转]&nbsp;</span><a href=http://www.360doc.com/content/12/0322/10/1028435_196528192.shtml target=_blank onclick="artStatistics('20-9-3');">成熟的美女</a></div><div><span style="color:#b0b0b0;">[转]&nbsp;</span><a href=http://www.360doc.com/content/11/0217/18/4994753_93866140.shtml target=_blank onclick="artStatistics('20-9-3');">美女好身材</a></div><div><span style="color:#b0b0b0;">[转]&nbsp;</span><a href=http://www.360doc.com/content/09/0322/11/108458_2881546.shtml target=_blank onclick="artStatistics('20-9-3');">女性生殖系统解剖示意图</a></div><div><span style="color:#b0b0b0;">[转]&nbsp;</span><a href=http://www.360doc.com/content/11/0127/19/801232_89424857.shtml target=_blank onclick="artStatistics('20-9-3');">冬装美女</a></div><div><span></span><a href=http://www.360doc.com/content/11/0221/21/17841_94935899.shtml target=_blank onclick="artStatistics('20-9-3');">亚洲销售女神徐鹤宁经典语录——太过精辟，不学必...</a></div></li></ul></div></div>
+<div class="clear360doc" style="padding-top: 10px; height: 260px;">
+<div id="divifartad1">
+<script>
+            var strow = document.body.offsetWidth;
+            var strsw = document.body.scrollWidth;
+            var strsc = window.screen.width;
+
+            function aliad1() {
+                document.write('<a style="display:none!important" id="tanx-a-mm_11220363_1101997_10218757"></a>');
+                tanx_s = document.createElement("script");
+                tanx_s.type = "text/javascript";
+                tanx_s.charset = "gbk";
+                tanx_s.id = "tanx-s-mm_11220363_1101997_10218757";
+                tanx_s.async = true;
+                tanx_s.src = "http://p.tanx.com/ex?i=mm_11220363_1101997_10218757";
+                tanx_h = document.getElementsByTagName("head")[0];
+                if (tanx_h) tanx_h.insertBefore(tanx_s, tanx_h.firstChild);
+            }
+
+            function aliad2() {
+                document.write('<a style="display:none!important" id="tanx-a-mm_11220363_1101997_26568831"></a>');
+                tanx_s = document.createElement("script");
+                tanx_s.type = "text/javascript";
+                tanx_s.charset = "gbk";
+                tanx_s.id = "tanx-s-mm_11220363_1101997_26568831";
+                tanx_s.async = true;
+                tanx_s.src = "http://p.tanx.com/ex?i=mm_11220363_1101997_26568831";
+                tanx_h = document.getElementsByTagName("head")[0];
+                if (tanx_h) tanx_h.insertBefore(tanx_s, tanx_h.firstChild);
+            }
+
+
+            if (strsc <= 1024) {
+                aliad1();
+            }
+            else {
+                //300宽
+                aliad2();
+            }
+        </script>
+</div>
+<div style="height: 10px;">
+</div>
+</div>
+<div class="his_her" id="recommendArt" style="margin-top: 5px;">
+<div class="str_border" style="margin: 0;">
+<span style="font-size: 14px; float: left;">喜欢该文的人也喜欢</span>
+<a style="float: right;" class="a_more" onclick="artStatistics('20-9-4');" href="http://www.360doc.com/readroom.html" target="_blank">更多</a>
+</div>
+<div class='his_her_div' style="height: 264px;">
+<ul class='his_her_list'>
+<li id="recommendArtLists"></li>
+</ul>
+</div>
+</div>
+<div class="clear360doc" style="padding-top: 10px;" id="divifartad2">
+</div>
+<br />
+<div id="divifartrightsogou">
+</div>
+<div class="clear360doc" id="divad5" style="padding-top: 11px; zoom: 1; width: 300px;">
+<div id="divad4" style="display: none;">
+<div id="divifartad">
+</div>
+<div class="ggwz">
+<a href="javascript:void(0);" onclick="closead(2);">关闭</a>
+</div>
+<div style="height: 13px;">
+</div>
+</div>
+<div style="clear: both; display: none;" id="divad6">
+<div id="adfloatbaidu">
+</div>
+<div class="ggwz" style="left: 25px;">
+<a href="javascript:void(0);" onclick="closead(3);">关闭</a>
+</div>
+<div style="height: 13px;">
+</div>
+</div>
+<div style="height: 75px;">
+</div>
+</div>
+</div>
+</div>
+<p class="clearboth"></p>
+<input type="hidden" id="artid" value="392130" />
+<input type="hidden" id="docarttitle" value="%e5%85%ab%e5%8d%81%e5%85%ab%e9%83%a8%e8%af%81%e5%88%b8%e6%8a%95%e8%b5%84%e4%b9%a6%e7%b1%8d+-+%e7%94%b5%e5%ad%90%e4%b9%a6%e4%b8%8b%e8%bd%bd+-+%e7%bb%bf%e8%89%b2%e8%bd%af%e4%bb%b6+-+%e7%bb%bf%e8%89%b2%e4%b8%8b%e8%bd%bd+-+%e7%bb%bf%e5%9f%8e%e7%a4%be%e5%8c%ba" />
+<input type="hidden" id="firstartid" value="392130" />
+<input type="hidden" id="firstuid" value="17841" />
+<input type="hidden" id="firstarturl" value="http://www.360doc.com/content/07/0310/18/17841_392130.shtml" />
+<input type="hidden" id="subclassid" value="-1" />
+<input type="hidden" id="recommendart1" value="-1" />
+<input type="hidden" id="recommendart2" value="412717" />
+<input type="hidden" id="isowner" value="False" />
+<input type="hidden" id="original" value="0" />
+<input type="hidden" id="showrewardlist" value="0" />
+<input type="hidden" id="saveruserid" value="17841" />
+<input type="hidden" id="artreadroomid" value="0" />
+<script src="http://www.360doc.com/js/Statistics/sha1.js?t=2017092101" type="text/javascript"></script>
+<script src="http://www.360doc.com/js/Statistics/addStatistics.js?t=2017101601" type="text/javascript"></script>
+<script src="http://www.360doc.com/js/showarticle.js?t=2018030801" type="text/javascript" charset="utf-8"></script>
+<script>GerLookingUserInfo(1,17841,1,0,'-1',-1,10,0);OutputSource('http://www.52nv.com/thread-171623-1-1.html','');</script>
+<script type="text/javascript" src="http://www.360doc.com/js/index7/newheader.js?t=2017092501"></script>
+<script src="http://blockart.360doc.com/ajax/getstatusv2.ashx?aid=392130" type="text/javascript" charset="utf-8" async="async"></script>
+<script type="text/javascript">
+        var baiduImagePlus = {
+            noLogo: true,
+            unionId: 'u2617463',
+            maxMiniAdCount: 0,
+            formList: [{ formId: 10 }]
+        };
+    </script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/i.js"></script>
+</body>
+</html>
